@@ -41,6 +41,8 @@ Concatenate the resulting key to the blob URI.  The final result should look lik
 
     $ docker run -it gabrielhartmann/libguestfs
     $ ./run virt-rescue --ro -a "<vhd URI>"
+    ><rescue> mount /dev/sda1 /sysroot
+    ><rescue> chroot /sysroot
   
 
 This container includes fixes for handling http and https URIs which contain query strings.  The current implementation of libguestfs has two defects around URI handling.
