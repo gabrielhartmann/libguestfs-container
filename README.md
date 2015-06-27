@@ -45,9 +45,9 @@ Concatenate the resulting key to the blob URI.  The final result should look lik
     ><rescue> chroot /sysroot
   
 
-This container includes fixes for handling http and https URIs which contain query strings.  The current implementation of libguestfs has two defects around URI handling.
+This container includes [fixes](https://github.com/gabrielhartmann/libguestfs) for handling http and https URIs which contain query strings.  The current implementation of libguestfs has two defects around URI handling.
 
  1. https://bugzilla.redhat.com/show_bug.cgi?id=1092583
  2. https://bugzilla.redhat.com/show_bug.cgi
 
-The fixes made here are incompatible with protocols other than http and https.
+The [fixes made here](https://github.com/gabrielhartmann/libguestfs) are incompatible with protocols other than http and https.  Permanent, fully compatible fixes are pending.
