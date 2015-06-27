@@ -1,5 +1,5 @@
 # libguestfs-container
-This is a Docker container for libguestfs.  It allows for interactive and scriptable interaction with remote virtual machine disk images.  It is particularly useful for interacting with Microsoft Azure vhd images.
+This is a Docker container for libguestfs.  It allows for interactive interaction with remote virtual machine disk images.  It is particularly useful for interacting with Microsoft Azure vhd images.
 
     $ docker run -it gabrielhartmann/libguestfs
     $ ./run virt-rescue --ro -a "<vhd URI>"
